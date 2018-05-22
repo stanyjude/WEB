@@ -1,0 +1,77 @@
+/*--   Hero Area   --*/
+section#hero-area {
+  /*padding-top: 22rem;*/
+  /*padding-bottom: 22rem;*/
+  background: url("../img/kw3.jpeg") no-repeat #292930;
+  background-size: cover;
+  height: 100vh;
+}
+#hero-area .hero-title{    
+    font-size: 4rem;
+    letter-spacing: -2px;
+    line-height: 8.5rem;
+    color: #ffffff;
+}
+#hero-area .hero-subtitle{
+    font-size: 2rem;
+    font-weight: 400;
+    line-height: 3.2rem;
+    opacity: 0.5;
+    margin-bottom: 3rem;
+}
+#hero-area .btn{
+  margin-right: 5px;
+}
+#hero-area img.hero-img-right{
+  z-index: 5000;
+  position: absolute;
+  /*top: -40px;*/
+}
+
+/*--   hero-area-responsive   --*/
+@media(min-width:1320px) {
+  section#hero-area{}
+  #hero-area img.hero-img-right{
+    /*top: -40px;*/
+  }
+}
+@media(max-width:1080px) {
+  section#hero-area {
+    padding-top: 20rem;
+    padding-bottom: 14rem;
+  }
+  #hero-area .hero-title{
+    font-size: 52px;
+    line-height: 62px;
+  }
+  #hero-area .hero-subtitle{
+    font-size: 1.8rem;
+    line-height: 2.5rem;
+  }
+}
+@media(max-width:840px) {
+  .hero-text{
+    text-align: center;
+    padding: 0px 70px;
+  }
+  #hero-area .hero-title{
+    font-size: 48px;
+    line-height: 62px;
+  }
+  .hero-subtitle{
+    font-size: 16px;
+  }
+}
+@media(max-width:640px) {
+  #hero-area .hero-text{
+    margin-top: 0rem;
+    padding: 0px;
+  }
+  #hero-area .hero-title{
+    font-size: 48px;
+    line-height: 52px;
+  }
+  #hero-area .hero-text .btn{
+    margin-top: 20px;
+  }
+}
